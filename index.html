@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interview Test: Pagination</title>
+    <meta charset="utf-8"/>
+
+    <!-- style sheets -->
+    <link type="text/css" rel="stylesheet" href="app/styles/styles.css" />
+</head>
+
+<body ng-app="todoApp" ng-controller='todoCtrl'>
+
+<h2>TODO LIST APP</h2>
+<p>Interview Test: Paginating a 'Todo' model list</p>
+
+<todo-paginated-list
+                    data="table.data"
+                    columns='table.columns' 
+                    length-show-default="table.lengthDefault">
+</todo-paginated-list>
+
+
+<!-- scripts -->
+<script src="Scripts/angular.min.js"></script>
+<script src="app/app.module.js"></script>
+<script src="app/main.js"></script>
+<script src="app/datatable.js"></script>
+
+</body>
+
+</html>
